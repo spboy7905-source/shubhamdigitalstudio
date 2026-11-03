@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Close Mobile Menu on Nav Item Click
+    // Close Mobile Menu on Nav Link Click
     const navLinks = document.querySelectorAll('.navbar-nav a');
     const navbarCollapse = document.querySelector('.navbar-collapse');
     navLinks.forEach(link => {
