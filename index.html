@@ -1,99 +1,105 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="hi" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubham Digital Studio - Photography & Videography</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for Icons -->
+    <title>Shubham Digital Studio | Best Wedding Photography in Sujangarh</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS CDN for Modern Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        studio: {
+                            dark: "#0b1915",
+                            card: "#112621",
+                            gold: "#d4af37",
+                            lightGold: "#f3e5ab",
+                            silver: "#e2e8f0"
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-[#0b1915] text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-black">
 
-    <!-- Header & Navigation -->
-    <header>
-        <div class="logo">Shubham <span>Digital Studio</span></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#0b1915]/90 backdrop-blur-md border-b border-amber-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <div class="text-amber-400 text-2xl font-serif font-bold tracking-wider">
+                    SHUBHAM <span class="text-slate-300 text-sm block font-sans tracking-widest">DIGITAL STUDIO</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="#home" class="hover:text-amber-400 transition">होम</a>
+                <a href="#about" class="hover:text-amber-400 transition">हमारे बारे में</a>
+                <a href="#services" class="hover:text-amber-400 transition">सर्विसेज</a>
+                <a href="#gallery" class="hover:text-amber-400 transition">गैलरी</a>
+                <a href="#contact" class="bg-gradient-to-r from-amber-500 to-amber-600 text-black px-5 py-2 rounded-full font-semibold hover:opacity-90 transition shadow-lg shadow-amber-500/20">संपर्क करें</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden text-amber-400 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#112621] border-b border-amber-500/20 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 hover:text-amber-400">होम</a>
+            <a href="#about" class="block py-2 hover:text-amber-400">हमारे बारे में</a>
+            <a href="#services" class="block py-2 hover:text-amber-400">सर्विसेज</a>
+            <a href="#gallery" class="block py-2 hover:text-amber-400">गैलरी</a>
+            <a href="#contact" class="block text-center bg-amber-500 text-black py-2 rounded-lg font-semibold mt-2">संपर्क करें</a>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Capturing Your Best Moments</h1>
-            <p>Wedding Photography, Cinematic Videography, Pre-Wedding Shoots & Album Designing.</p>
-            <a href="#contact" class="btn">Book Now</a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-container">
-            <div class="service-box">
-                <i class="fas fa-camera-retro"></i>
-                <h3>Wedding Photography</h3>
-                <p>Make your special day memorable with our professional candid and traditional wedding photography.</p>
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#112621] via-[#0b1915] to-[#07110e]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24 z-10">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-sm font-medium tracking-widest uppercase mb-6">
+                ✨ सुजानगढ़, राजस्थान (Since 2009)[span_1](start_span)[span_1](end_span)
+            </span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold tracking-tight mb-6">
+                Capturing Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-amber-600">Timeless Moments</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300 mb-10 font-light">
+                वेडिंग फोटोग्राफी, सिनेमैटिक वीडियोग्राफ़ी और प्रीमियम प्री-वेडिंग शूट्स के साथ आपके खास पलों को हमेशा के लिए यादगार बनाएं।
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#gallery" class="w-full sm:w-auto bg-gradient-to-r from-amber-400 to-amber-600 text-black font-bold px-8 py-4 rounded-full shadow-lg shadow-amber-500/20 hover:scale-105 transition">
+                    पोर्टफोलियो देखें
+                </a>
+                <a href="#contact" class="w-full sm:w-auto border border-amber-500/40 text-amber-400 font-semibold px-8 py-4 rounded-full hover:bg-amber-500/10 transition">
+                    बुकिंग के लिए कॉल करें
+                </a>
             </div>
-            <div class="service-box">
-                <i class="fas fa-video"></i>
-                <h3>Cinematic Videography</h3>
-                <p>High-definition cinematic films and drone shots for your weddings and grand events.</p>
-            </div>
-            <div class="service-box">
-                <i class="fas fa-heart"></i>
-                <h3>Pre-Wedding Shoots</h3>
-                <p>Creative and romantic pre-wedding locations and concepts tailored just for you.</p>
-            </div>
-            <div class="service-box">
-                <i class="fas fa-images"></i>
-                <h3>Album Designing</h3>
-                <p>High-quality Karizma and photobook album designing with premium finishing.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <h2>Our Work Gallery</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=500&q=80" alt="Wedding"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=500&q=80" alt="Couple"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=500&q=80" alt="Ceremony"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=500&q=80" alt="Bride"></div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <div class="contact-wrapper">
-            <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt"></i> Main Market, Your City, India</p>
-                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
-                <p><i class="fas fa-envelope"></i> shubhamdigital@gmail.com</p>
-            </div>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <textarea placeholder="Your Message / Event Date" rows="4" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Shubham Digital Studio. All Rights Reserved.</p>
+    <footer class="bg-[#07110e] border-t border-amber-500/20 py-8 text-center text-slate-400 text-sm">
+        <p>&copy; 2009 - 2026 Shubham Digital Studio, Sujangarh (Raj.)[span_2](start_span)[span_2](end_span). All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
