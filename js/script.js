@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     filterButtons.forEach(button => {
         button.addEventListener('click', function () {
-            // Active Button Style Toggle
             filterButtons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
 
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Close Mobile Navbar on Click
+    // Close Mobile Menu on Nav Item Click
     const navLinks = document.querySelectorAll('.navbar-nav a');
     const navbarCollapse = document.querySelector('.navbar-collapse');
     navLinks.forEach(link => {
