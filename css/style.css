@@ -1,4 +1,4 @@
-/* Fonts & Minimalist Black/White Theme Rules */
+/* General Settings */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #000000;
@@ -9,7 +9,7 @@ body {
     background-color: #0a0a0a;
 }
 
-/* Stylish Header Name Customization */
+/* Stylish Header: SHUBHAM on top, DIGITAL STUDIO below */
 .brand-title {
     font-family: 'Playfair Display', serif;
     font-weight: 800;
@@ -28,32 +28,22 @@ body {
     margin-top: 3px;
 }
 
-/* Hero Titles */
-.hero-title {
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-}
-
-.hero-subtitle {
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
-.section-title {
+/* Titles */
+.hero-title, .section-title {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-/* Hero Section Background */
+/* Hero Section */
 .hero-section {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)), 
                 url('https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
     padding-top: 80px;
 }
 
-/* Black and White Filtering Buttons */
+/* Filter Buttons */
 .btn-bw {
     border: 1px solid #444;
     color: #888;
@@ -70,28 +60,26 @@ body {
     background: #111;
 }
 
-/* Portfolio Card Hover & Image Styling */
+/* Portfolio Colorful Images & Zoom */
 .portfolio-card {
     height: 260px;
 }
 
-.bw-img {
+.color-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    filter: grayscale(100%); /* B&W View */
-    transition: filter 0.4s ease, transform 0.4s ease;
+    transition: transform 0.4s ease;
 }
 
-.portfolio-card:hover .bw-img {
-    filter: grayscale(0%); /* Restores color gently on hover */
+.portfolio-card:hover .color-img {
     transform: scale(1.05);
 }
 
 .portfolio-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -100,7 +88,7 @@ body {
     opacity: 1;
 }
 
-/* Service Card Hover */
+/* Service Boxes */
 .service-box {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
@@ -110,7 +98,7 @@ body {
     border-color: #fff !important;
 }
 
-/* Input Styles */
+/* Form Inputs */
 .form-control:focus, .form-select:focus {
     box-shadow: none;
     border-color: #ffffff !important;
