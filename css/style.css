@@ -1,0 +1,110 @@
+/* Custom Colors matching Logo */
+:root {
+    --dark-green-bg: #03201d;
+    --darker-bg: #011412;
+    --gold-color: #d4af37;
+    --silver-color: #c0c0c0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--darker-bg);
+    color: #fff;
+}
+
+/* Color Classes */
+.text-gold { color: var(--gold-color) !important; }
+.text-silver { color: var(--silver-color) !important; }
+.bg-dark-custom { background-color: var(--dark-green-bg) !important; }
+.bg-darker { background-color: var(--darker-bg) !important; }
+
+/* Logo Branding */
+.logo-text-silver {
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: var(--silver-color);
+    letter-spacing: 1px;
+}
+.logo-text-gold {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--gold-color);
+}
+
+/* Buttons */
+.btn-gold {
+    background-color: var(--gold-color);
+    color: #000;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-gold:hover {
+    background-color: #b8962d;
+    color: #000;
+}
+.btn-outline-gold {
+    border-color: var(--gold-color);
+    color: var(--gold-color);
+}
+.btn-outline-gold:hover, .btn-outline-gold.active {
+    background-color: var(--gold-color);
+    color: #000;
+    border-color: var(--gold-color);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(1, 20, 18, 0.8), rgba(1, 20, 18, 0.95)), 
+                url('https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    padding-top: 80px;
+}
+
+/* Section Title */
+.section-title {
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: var(--gold-color);
+    margin: 8px auto 0;
+}
+
+/* Service Cards */
+.service-card {
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold-color);
+}
+
+/* Portfolio Overlay */
+.portfolio-card {
+    height: 250px;
+}
+.portfolio-card img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.portfolio-card:hover img {
+    transform: scale(1.1);
+}
+.portfolio-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.portfolio-card:hover .portfolio-overlay {
+    opacity: 1;
+}
